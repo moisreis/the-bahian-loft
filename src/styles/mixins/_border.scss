@@ -1,0 +1,10 @@
+@import '../config/functions';
+@import '../config/variables';
+
+@mixin border_Accent {
+border: 1px solid palette(app, border);
+}
+
+@mixin border_Body {
+  border: 1px solid palette(typography, body);
+}

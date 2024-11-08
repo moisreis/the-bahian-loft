@@ -1,0 +1,39 @@
+@import '../../styles/config/functions';
+@import '../../styles/config/variables';
+@import '../../styles/mixins/flex';
+@import '../../styles/mixins/border';
+
+.Container {
+  @include flex__Row_start;
+  padding: spacing(xs) spacing(md);
+  gap: spacing(threeXs);
+  font-size: typography(font-sizes, twoXs);
+  font-weight: typography(font-weights, body);
+  font-family: typography(fonts, sans);
+  background-color: palette(typography, body);
+  color: palette(app, background);
+  cursor: pointer;
+
+  &_Primary {
+    background-color: palette(typography, body);
+    color: palette(app, background);
+    @include border_Body;
+  }
+
+  &_Secondary {
+    background-color: palette(app, accent);
+    color: palette(typography, body);
+    @include border_Accent;
+  }
+
+  &_Link {
+    background-color: transparent;
+    color: palette(typography, body);
+    border: none;
+
+    &:hover {
+      background-color: palette(app, accent);
+      transition: background-color 0.15s;
+    }
+  }
+}
