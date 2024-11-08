@@ -25,7 +25,7 @@ export default buildConfig({
   collections: [Users, Media, Categories, Posts],
   globals: [Header],
   editor: lexicalEditor(),
-  secret: 'bad02ce81440cf2d4ee19ed1' || '',
+  secret: process.env.PAYLOAD_SECRET || '',
   typescript: {
     outputFile: path.resolve(dirname, 'payload-types.ts'),
   },
