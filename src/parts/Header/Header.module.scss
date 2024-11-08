@@ -1,0 +1,25 @@
+@import '../../styles/config/functions';
+@import '../../styles/config/variables';
+@import '../../styles/mixins/flex';
+
+.Container {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  padding: spacing(xs) spacing(fourXl);
+
+  &_Inner {
+    display: flex;
+
+    &__left {
+      @include flex__Row_start;
+    }
+
+    &__center {
+      @include flex__Row_center;
+    }
+
+    &__right {
+      @include flex__Row_end;
+    }
+  }
+}
