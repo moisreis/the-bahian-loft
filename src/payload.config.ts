@@ -10,6 +10,7 @@ import { Users } from './collections/Users'
 import { Media } from './collections/Media'
 import { Categories } from './collections/Categories'
 import { Posts } from './collections/Posts'
+import Header from './globals/Header'
 
 const filename = fileURLToPath(import.meta.url)
 const dirname = path.dirname(filename)
@@ -22,8 +23,9 @@ export default buildConfig({
     },
   },
   collections: [Users, Media, Categories, Posts],
+  globals: [Header],
   editor: lexicalEditor(),
-  secret: process.env.PAYLOAD_SECRET || '',
+  secret: 'bad02ce81440cf2d4ee19ed1' || '',
   typescript: {
     outputFile: path.resolve(dirname, 'payload-types.ts'),
   },

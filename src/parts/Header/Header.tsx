@@ -3,8 +3,11 @@ import SCSS from './Header.module.scss';
 import Button from '../Button/Button';
 import Image from 'next/image'
 import Logo from '../../public/Logo.svg'
+import payload from 'payload'
+import { CollectionAfterChangeHook } from 'payload'
 
 const Header = () => {
+
     return (
         <header className={SCSS.Container}>
             <nav className={SCSS.Container_Inner__left}>
