@@ -1,0 +1,25 @@
+@function palette($keyOne, $keyTwo: null, $keyThree: null) {
+  @if $keyThree != null {
+    @return map-get(map-get(map-get($palette, $keyOne), $keyTwo), $keyThree);
+  } @else if $keyTwo != null {
+    @return map-get(map-get($palette, $keyOne), $keyTwo);
+  } @else {
+    @return map-get($palette, $keyOne);
+  }
+}
+
+@function spacing($key) {
+  @return map-get($spacing, $key);
+}
+
+@function typography($keyOne, $keyTwo: null) {
+  @if $keyTwo != null {
+    @return map-get(map-get($typography, $keyOne), $keyTwo);
+  } @else {
+    @return map-get($typography, $keyOne);
+  }
+}
+
+@function radius($key) {
+  @return map-get($radius, $key);
+}

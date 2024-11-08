@@ -1,0 +1,73 @@
+@import 'variables';
+@import 'functions';
+@import 'fonts';
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  overflow-y: scroll;
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  background-color: palette(app, background);
+  color: palette(typography, body);
+  line-height: typography(line-heights, body);
+  font-family: typography(fonts, sans);
+}
+
+img,
+picture,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: palette(typography, header);
+  line-height: typography(line-heights, header);
+}
+
+h1 {
+  font-size: typography(font-sizes, threeXl);
+}
+
+h2 {
+  font-size: typography(font-sizes, twoXl);
+}
+
+h3 {
+  font-size: typography(font-sizes, xl);
+}
+
+h4 {
+  font-size: typography(font-sizes, lg);
+}
+
+h5 {
+  font-size: typography(font-sizes, md);
+}

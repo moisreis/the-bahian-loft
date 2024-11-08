@@ -1,0 +1,69 @@
+$palette: (
+        typography: (
+                body: hsl(0, 0%, 20%),
+                header: hsl(0, 0%, 5%),
+                muted: hsl(0, 0%, 60%),
+        ),
+        app: (
+                accent: hsl(0, 0%, 90%),
+                background: hsl(0, 0%, 100%),
+                border: hsl(0, 0%, 85%),
+        )
+);
+
+$spacing: (
+        threeXs: 2px,
+        twoXs: 4px,
+        xs: 8px,
+        sm: 12px,
+        md: 16px,
+        lg: 24px,
+        xl: 32px,
+        twoXl: 40px,
+        threeXl: 48px,
+        fourXl: 64px,
+        fiveXl: 80px,
+        sixXl: 96px,
+        sevenXl: 160px,
+);
+
+$typography: (
+        fonts: (
+                sans: 'IBM Plex Sans',
+                serif: 'IBM Plex Serif',
+                mono: 'IMB Plex Mono'
+        ),
+        font-sizes: (
+                threeXs: 12px,
+                twoXs: 14px,
+                xs: 16px,
+                sm: 18px,
+                md: 20px,
+                lg: 24px,
+                xl: 28px,
+                twoXl: 32px,
+                threeXl: 36px,
+                fourXl: 42px,
+                fiveXl: 48px,
+                sixXl: 54px,
+                sevenXl: 60px,
+                eightXl: 68px,
+                nineXl: 76px,
+                tenXl: 84px,
+                elevenXl: 92px,
+        ),
+        line-heights: (
+                body: 1.5,
+                heading: 1.15
+        ),
+        font-weights: (
+                body: 400,
+                button: 500,
+                header: 700
+        )
+);
+
+$radius: (
+        base: 0rem,
+        full: 9999px
+)
