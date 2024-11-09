@@ -12,6 +12,12 @@ const Header: GlobalConfig = {
         },
 
         {
+            name: 'logoText',
+            label: 'Logo Text',
+            type: 'text',
+        },
+
+        {
             name: 'links',
             label: 'Links',
             type: 'array',
@@ -23,22 +29,6 @@ const Header: GlobalConfig = {
                     label: 'Pages',
                     type: 'relationship',
                     relationTo: 'categories',
-                    required: true,
-                },
-            ],
-        },
-
-        {
-            name: 'socialMedia',
-            label: 'Social Media',
-            type: 'array',
-            required: true,
-            maxRows: 8,
-            fields: [
-                {
-                    name: 'socialMediaLink',
-                    label: 'Social Media Link',
-                    type: 'text',
                     required: true,
                 },
             ],
