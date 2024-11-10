@@ -27,7 +27,7 @@ export async function Header() {
                 <Button variant='Link' content='@twitter/x'/>
                 <Button variant='Link' content='@linkedin'/>
                 <Button variant='Link' content='@instagram'/>
-                <Button variant='Primary' content='Hire me'/>
+                <Button variant='Primary' content={HEADER.mainButtonText}/>
             </div>
         </header>
     );

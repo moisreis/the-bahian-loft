@@ -13,6 +13,7 @@
   background-color: palette(typography, body);
   color: palette(app, background);
   cursor: pointer;
+  text-transform: capitalize;
 
   &_Primary {
     background-color: palette(typography, body);

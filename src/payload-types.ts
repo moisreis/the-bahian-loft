@@ -304,7 +304,7 @@ export interface PayloadMigrationsSelect<T extends boolean = true> {
 export interface Header {
   id: number;
   logo: number | Media;
-  logoText?: string | null;
+  mainButtonText: string;
   links: {
     page: number | Category;
     id?: string | null;
@@ -318,7 +318,7 @@ export interface Header {
  */
 export interface HeaderSelect<T extends boolean = true> {
   logo?: T;
-  logoText?: T;
+  mainButtonText?: T;
   links?:
     | T
     | {

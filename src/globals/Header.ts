@@ -12,9 +12,10 @@ const Header: GlobalConfig = {
         },
 
         {
-            name: 'logoText',
-            label: 'Logo Text',
+            name: 'mainButtonText',
+            label: 'mainButtonText',
             type: 'text',
+            required: true,
         },
 
         {
