@@ -13,7 +13,7 @@ const Header: GlobalConfig = {
 
         {
             name: 'mainButtonText',
-            label: 'mainButtonText',
+            label: 'Main Button',
             type: 'text',
             required: true,
         },
@@ -30,6 +30,28 @@ const Header: GlobalConfig = {
                     label: 'Pages',
                     type: 'relationship',
                     relationTo: 'categories',
+                    required: true,
+                },
+            ],
+        },
+
+        {
+            name: 'socialMedia',
+            label: 'Social Media',
+            type: 'array',
+            required: true,
+            maxRows: 8,
+            fields: [
+                {
+                    name: 'socialMediaLabel',
+                    label: 'Social Media Name',
+                    type: 'text',
+                    required: true,
+                },
+                {
+                    name: 'socialMediaLink',
+                    label: 'Social Media Link',
+                    type: 'text',
                     required: true,
                 },
             ],

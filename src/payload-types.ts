@@ -309,6 +309,11 @@ export interface Header {
     page: number | Category;
     id?: string | null;
   }[];
+  socialMedia: {
+    socialMediaLabel: string;
+    socialMediaLink: string;
+    id?: string | null;
+  }[];
   updatedAt?: string | null;
   createdAt?: string | null;
 }
@@ -323,6 +328,13 @@ export interface HeaderSelect<T extends boolean = true> {
     | T
     | {
         page?: T;
+        id?: T;
+      };
+  socialMedia?:
+    | T
+    | {
+        socialMediaLabel?: T;
+        socialMediaLink?: T;
         id?: T;
       };
   updatedAt?: T;
