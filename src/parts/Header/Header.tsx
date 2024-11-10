@@ -19,7 +19,7 @@ export async function Header() {
                 {
                     HEADER.links.map((link) => {
                         return (
-                            <Button variant='Link' content={link.page.categoryTitle} key={link.page.id}/>
+                            <Button variant='Link' content={link.page.categoryTitle} />
                         );
                     })
                 }
@@ -31,7 +31,7 @@ export async function Header() {
                 {
                     HEADER.socialMedia.map((link) => {
                         return (
-                            <Button variant='Link' content={`@${link.socialMediaLabel}`} key={link.id}/>);
+                            <Button variant='Link' content={`@${link.socialMediaLabel}`} />);
                     })
                 }
                 <Button variant='Primary' content={HEADER.mainButtonText}/>
